@@ -70,5 +70,5 @@ Improve plate localization accuracy with deep learning (YOLO, SSD, etc.)
 
 ### License
 
-This project is licensed under the MIT License.
+This project is intended for educational use under the Naan Mudhalvan initiative and is not for commercial deployment.
 
