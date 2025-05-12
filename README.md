@@ -46,8 +46,9 @@ Install the required dependencies:
 
 ```
 pip install opencv-python easyocr imutils numpy
-Run the main script:
 ```
+Run the main script:
+
 ```
 python main.py
 ```
@@ -56,8 +57,9 @@ python main.py
 Install necessary packages using pip:
 ```
 pip install opencv-python easyocr imutils numpy
-For GPU acceleration (optional but recommended for faster OCR):
 ```
+For GPU acceleration (optional but recommended for faster OCR):
+
 ```
 pip install torch torchvision torchaudio
 ```
