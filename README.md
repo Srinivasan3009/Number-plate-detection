@@ -5,68 +5,75 @@ This Streamlit web application automatically detects and reads license plate num
 
 ---
 
-## 🛠️ Features
+### 📸 Project Features
+Easy input support for images and videos
 
-- Upload vehicle images in JPG, PNG, BMP, or WEBP formats
-- Detect license plate region using image processing
-- Extract and display license plate text using OCR (EasyOCR)
-- Visualize results with bounding boxes and annotations
+Accurate license plate detection using contour detection
 
----
+Text recognition from license plates with EasyOCR
 
----
+Real-time video processing optimized with frame skipping
 
-## 🔧 Technologies Used
+Outputs a processed video with detected license numbers overlaid on the frames
 
-- **Python**
-- **Streamlit** – For creating the interactive web interface
-- **OpenCV** – Image processing and contour detection
-- **EasyOCR** – Optical character recognition (OCR)
-- **Pillow** – Image file handling
-- **NumPy** – Numerical operations
+### 🛠️ Tech Stack
+Python 3.x
 
----
+OpenCV
 
-## 🎯 Features
+EasyOCR
 
-- Upload a vehicle image containing a number plate.
-- Automatically detects the number plate using contour approximation.
-- Extracts and reads text from the plate using EasyOCR.
-- Displays the image with bounding box and detected text.
+NumPy
 
----
+imutils
 
-## 🚀 How to Run Locally
+Google Colab (for cloud-based processing)
 
-### 1. Clone the Repository
+### 🧑‍💻 How to Run
 
-git clone https://github.com/Srinivasan3009/Number-plate-detection.git
+Google Colab (Recommended)
 
-cd number_plate_detection
+Open the project in Google Colab.
 
+Upload your image or video file when prompted.
 
-## 📦 Dependencies
+The processed output will be displayed and saved automatically.
 
-Make sure you have Python 3.7+ installed. Then install the required Python libraries:
+Local Setup:
+Make sure Python 3.x is installed on your system.
 
-```bash
-pip install streamlit pillow opencv-python imutils easyocr numpy
+Install the required dependencies:
 
 ```
-### Run the Streamlit App
+pip install opencv-python easyocr imutils numpy
+Run the main script:
+```
+```
+python main.py
+```
 
-streamlit run app.py
+### 🧾 Requirements
+Install necessary packages using pip:
+```
+pip install opencv-python easyocr imutils numpy
+For GPU acceleration (optional but recommended for faster OCR):
+```
+```
+pip install torch torchvision torchaudio
+```
 
-Then open your browser and navigate to http://localhost:8501
+### 🖼️ Sample Output
+The processed images and videos will show license plates with bounding boxes and the recognized text overlaid.
 
-###  Future Enhancements
-Support for live webcam or video input
+### 🎥 Video Output (Colab)
+After uploading a video in Google Colab, you’ll be able to download the processed video with bounding boxes and recognized license plate numbers.
 
-Integration with vehicle databases
+### ⚠️ Limitations
+Only rectangular license plates are supported.
 
-Handle multiple license plates in one image
+EasyOCR may struggle with very blurry or angled license plates.
 
-Improve plate localization accuracy with deep learning (YOLO, SSD, etc.)
+Frame skipping is enabled by default (only processes every 5th frame) to optimize performance.
 
 ### License
 
